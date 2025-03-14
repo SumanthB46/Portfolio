@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Navigation */
+nav h2 {
+    margin: 0;
+    padding-left: 20px;
+}
+.nav {
+    margin-right: 20px;
+}
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+.nav-link:hover {
+    color: #00aaff !important;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.nav-link.active {
+    border-bottom: 2px solid #00aaff;
+}
+.about i:hover {
+    color: #6a11cb;
+}
+.about h4:hover {
+    color: #2575fc;
+}
+.about p:hover {
+    color: #2575fc;
+}
+/* Hero Section */
+.hero-section {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+/* About Section */
+/* Ensure the button doesn’t have extra bottom margin */
+.btn-primary {
+    margin-bottom: 10px; /* Reduce if necessary */
+}
+
+/* Adjust the About section spacing */
+#about {
+    padding-top: 40px; /* Adjust as needed */
+    margin-top: -90px; /* Pull the section up */
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #00aaff;
+}
+.hero-text h1 span {
+    color: #6a11cb;
+}
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+.social-icons a:hover {
+    color: #00aaff;
+    transform: scale(1.2);
+}
+/* Buttons */
+.btn-primary {
+    background: #2575fc;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+/* Projects Section */
+.project-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 170, 255, 0.3);
+}
+/* Skills Section */
+.skills, .about {
+    padding: 60px 0;
+    text-align: center;
+}
+.about h2, .skills h2 {
+    color: #2575fc;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+.skills{
+    margin-top: -90px;
+}
+.skill-box img {
+    width: 180px !important;
+    height: 120px !important;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+.skill-box:hover {
+    transform: scale(1.1);
+}
+/* Work Cards */
+.work-card {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #121212;
+    transition: transform 0.3s ease-in-out;
+}
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+/* Education */
+.Education {
+    margin: 10px 20px;
+}
+#projects{
+    margin-top: -80px;
+}
+/* Timeline */
+.timeline-item {
+    background: #161b22;
+    margin-bottom: 15px;
+    border-left: 4px solid #2575fc;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+.timeline-item:hover {
+    transform: translateY(-5px);
+    background: rgba(37, 117, 252, 0.1);
+    border-left-color: #00aaff;
+    box-shadow: 0px 6px 15px rgba(37, 117, 252, 0.3);
+}
+.timeline-icon {
+    color: #2575fc;
+    font-size: 18px;
+    margin-right: 8px;
+    transition: color 0.3s ease-in-out;
+}
+.timeline-item:hover .timeline-icon {
+    color: #00aaff;
+}
+/* Contact Form */
+.contact-form {
+    background: #161b22;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+/* Footer */
+footer {
+    background: #161b22;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .skill-box img {
+        width: 150px !important;
+        height: 100px !important;
+    }
+}
