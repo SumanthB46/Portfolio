@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Sumanth B - Web Developer Portfolio">
-<meta name="keywords" content="Web Developer, Full Stack, Portfolio, HTML, CSS, JavaScript, Java">
-<meta name="author" content="Sumanth B">
+    <meta property="og:title" content="Sumanth B - Web Developer Portfolio">
+    <meta property="og:description" content="Innovative solutions with a focus on web development and problem-solving.">
+    <meta property="og:image" content="URL_TO_YOUR_IMAGE">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta name="twitter:card" content="summary_large_image">
 
     <title>Portfolio | Sumanth B</title>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <!-- AOS Library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
 <body>
-    <header>
-        <nav class="container-fluid px-4">
-            <div class="d-flex justify-content-between align-items-center">
-                <h2 class="text-white">Sumanth B</h2>
-                <ul class="nav">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Sumanth B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -29,11 +39,12 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    
-    <section class="hero-section container text-center">
-        <div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center d-flex align-items-center">
+        <div class="container">
             <h2>Hello, It's Me</h2>
             <h1>Sumanth <span>B</span></h1>
             <h3>I'm a <span id="typed"></span></h3>
@@ -42,227 +53,160 @@
                 <a href="https://github.com/SumanthB46" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://www.linkedin.com/in/sumanth-b-947956278" target="_blank"><i class="bi bi-linkedin"></i></a>
             </div>
-            <a href="./files/Resume.pdf" download="downloaded-image.png">
-                <button class="btn btn-primary mt-3">MY RESUME <i class="bi bi-download"></i></button>
+            <a href="./files/Resume.pdf" download>
+                <button class="btn btn-primary mt-3">Download Resume <i class="bi bi-download"></i></button>
             </a>
-            
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Passionate web developer with a strong background in designing and developing innovative web applications.</p>
-        </div>
-
-       
-           
-        <h3 class="text-center mt-4" data-aos="fade-up">Works I Do</h3>
-        <div class="row mt-4">
-        
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="work-card">
-                    <div class="icon-container text-center p-3">
-                        <i class="bi bi-globe2" style="font-size: 3rem;"></i>
-                    </div>
-                    <div class="p-3">
-                        <h4>Complete WebsiteSolutions</h4>
-                        <p>Handling everything from design, development, and deployment.</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-card">
-                    <div class="icon-container text-center p-3">
-                        <i class="bi bi-code-slash" style="font-size: 3rem;"></i>
-                    </div>
-                    <div class="p-3">
-                        <h4>Frontend Development</h4>
-                        <p>Creating responsive, user-friendly, and interactive web interfaces.</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-                <div class="work-card">
-                    <div class="icon-container text-center p-3">
-                        <i class="bi bi-layers" style="font-size: 3rem;"></i>
-                    </div>
-                    <div class="p-3">
-                        <h4>Custom Websites</h4>
-                        <p>Building unique, tailored websites to meet specific business needs.</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
-                <div class="work-card">
-                    <div class="icon-container text-center p-3">
-                        <i class="bi bi-box-arrow-in-down-right" style="font-size: 3rem;"></i>
-                    </div>
-                    <div class="p-3">
-                        <h4>Landing Pages</h4>
-                        <p>Designing high-converting landing pages for marketing and lead generation.</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="800">
-                <div class="work-card">
-                    <div class="icon-container text-center p-3">
-                        <i class="bi bi-cart" style="font-size: 3rem;"></i>
-                    </div>
-                    <div class="p-3">
-                        <h4>E-commerce Websites</h4>
-                        <p>Developing online stores with secure payment integrations and seamless UX.</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-        
-    <div class=" Education">
-                <div class="container py-5">
-                    <h2 class="fw-bold text-center mb-4">Education</h2> <!-- Centered title -->
-                    <div class="row">
-                        <!-- Education Column 1 -->
-                        <div class="col-md-6">
-                            <div class="timeline">
-                                <div class="timeline-item p-3 border rounded shadow-sm">
-                                    <p><i class="bi bi-calendar timeline-icon"></i> 2020 - 2023</p>
-                                    <h5 class="fw-bold">Bachelors in Information Science</h5>
-                                    <p>CGPA: 7.6</p>
-                                </div>
-                            </div>  
-                        </div>
-                       
-                        <!-- Education Column 2 -->
-                        <div class="col-md-6">
-                            <div class="timeline">
-                                <div class="timeline-item p-3 border rounded shadow-sm">
-                                    <p><i class="bi bi-calendar timeline-icon"></i> 2016 - 2020</p>
-                                    <h5 class="fw-bold">Diploma in Computer Science</h5>
-                                    <p>CGPA: 6.8</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-        </div> 
-    </section>
-    
-
-    </section>
-    <section id="skills" class="skills">
-        <h2 style="color: white;">My <span style="color: #2575fc;">Skills</span></h2>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-6 skill-box">
-                    <img src="./images/spring.png" alt="HTML">
-                    <p>SPRING</p>
-                </div>
-                <div class="col-md-3 col-sm-6 skill-box">
-                    <img src="./images/java.png" alt="CSS">
-                    <p>JAVA</p>
-                </div>
-                <div class="col-md-3 col-sm-6 skill-box">
-                    <img src="./images/javascript.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="col-md-3 col-sm-6 skill-box">
-                    <img src="./images/MYSQL.png" alt="Java">
-                    <p>MySQL</p>
-                </div>
-                <div class="col-md-3 col-sm-6 skill-box">
-                    <img src="./images/html.jpg" alt="JavaScript">
-                    <p>HTML</p>
-                </div>
-                <div class="col-md-3 col-sm-6 skill-box">
-                    <img src="./images/CSS.jpg" alt="Java">
-                    <p>CSS</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section id="projects" class="container py-5">
-        <h2 class="text-center mb-4">My <span style="color:#2575fc;">Projects</span></h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="./images/p1.png" class="w-100" alt="Project 1">
-                    <div class="p-3">
-                        <h4>Innventory management.</h4>
-                        <p>Developed a comprehensive Inventory Management using Spring Boot,featuring product,category,supplier,ordermanagement </p>
-                        <a href="https://github.com/SumanthB46/Event-Management.git" class="btn btn-primary btn-sm">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="./images/p2.png" class="w-100" alt="Project 1">
-                    <div class="p-3">
-                        <h4>Event Management</h4>
-                        <p>Developed a scalable Event Management System using Java,JDBC,MVC streamlining event and attendee management.</p>
-                        <a href="https://github.com/SumanthB46/Event-Management.git" class="btn btn-primary btn-sm">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="./images/p3.png" class="w-100" alt="Project 3">
-                    <div class="p-3">
-                        <h4>BookMyshow-Clone</h4>
-                        <p>This project is a frontend replica of BookMyShow, meticulously crafted using HTML, CSS, Bootstrap 5, and JavaScript to deliver a seamless event booking experience.</p>
-                        <a href="https://sumanthb46.github.io/BookMyshow-clone/" class="btn btn-primary btn-sm">View Project</a>
-                    </div>
-                </div>
-            </div>
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">Passionate web developer with a strong background in designing and developing innovative web applications.</p>
             
+            <h3 class="text-center mt-4" data-aos="fade-up">Works I Do</h3>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="work-card">
+                        <i class="bi bi-code-slash"></i>
+                        <h4>Frontend Development</h4>
+                        <p>Creating responsive and interactive web interfaces.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="work-card">
+                        <i class="bi bi-globe2"></i>
+                        <h4>Web Applications</h4>
+                        <p>Building scalable and secure web solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="work-card">
+                        <i class="bi bi-cart"></i>
+                        <h4>E-commerce Websites</h4>
+                        <p>Developing online stores with smooth user experience.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-    <section id="contact" class="container py-5">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <div class="contact-form mx-auto" style="max-width: 500px;">
-            <form action="https://formspree.io/f/xvgzezyl" method="POST">
-                <div class="mb-3">
-                    <label class="form-label">Your Email</label>
-                    <input type="email" name="email" class="form-control" required>
+    <section id="skills" class="skills py-5">
+        <div class="container text-center">
+            <h2 class="text-white fw-bold">My <span style="color: #2575fc;">Skills</span></h2>
+            <div class="row mt-4">
+                <!-- Skill 1 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card p-4 text-center shadow-sm">
+                        <i class="bi bi-layers skill-icon"></i>
+                        <h5>Spring Boot</h5>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Your Message</label>
-                    <textarea name="message" class="form-control" rows="4" required></textarea>
+                <!-- Skill 2 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card p-4 text-center shadow-sm">
+                        <i class="bi bi-cup-hot skill-icon"></i>
+                        <h5>Java</h5>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Send Message</button>
-            </form>
+                <!-- Skill 3 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card p-4 text-center shadow-sm">
+                        <i class="bi bi-file-code skill-icon"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card p-4 text-center shadow-sm">
+                        <i class="bi bi-database skill-icon"></i>
+                        <h5>MySQL</h5>
+                    </div>
+                </div>
+                <!-- Skill 5 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card p-4 text-center shadow-sm">
+                        <i class="bi bi-code-slash skill-icon"></i>
+                        <h5>HTML & CSS</h5>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="skill-card p-4 text-center shadow-sm">
+                        <i class="bi bi-bootstrap skill-icon"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2025 Sumanth B | All Rights Reserved</p>
-    </footer>
-    <!-- AOS Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    
-    AOS.init();
+   <!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Get In Touch</h2>
+
+    <!-- Success Message (Hidden Initially) -->
+    <div id="successMessage" class="alert alert-success text-center d-none">
+        ✅ Message sent successfully!
+    </div>
+
+    <div class="contact-form mx-auto p-4" style="max-width: 500px; background: #f8f9fa; border-radius: 10px;">
+        <form id="contactForm" action="https://formspree.io/f/xvgzezyl" method="POST">
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-envelope"></i> Your Email</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-comment-dots"></i> Your Message</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-edit"></i></span>
+                    <textarea name="message" class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 contact-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- AOS & JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
         new Typed("#typed", {
             strings: ["Full Stack Developer", "Web Developer", "Problem Solver"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true
         });
-        window.addEventListener("scroll", function() {
-            document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
-            document.getElementById("scrollTop").style.display = window.scrollY > 200 ? "block" : "none";
-        });
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-</script>
+
+
+
+        // message sent script 
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        document.getElementById("successMessage").classList.remove("d-none");
+        this.reset();
+        setTimeout(() => {
+            document.getElementById("successMessage").classList.add("d-none");
+        }, 3000);
+    });
+
+
+
+    window.addEventListener("scroll", function() {
+    let header = document.querySelector("header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+    </script>
 
 </body>
 </html>
