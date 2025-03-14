@@ -119,6 +119,7 @@ p {
 /* Skills Section */
 .skills {
     text-align: center;
+    margin-top: -50px;
 }
 
 .skill-card {
@@ -185,6 +186,7 @@ section {
 
 /* Projects */
 #projects {
+    margin-top: -50px;
     padding: 80px 20px;
 }
 
