@@ -42,15 +42,15 @@ body {
   padding: 100px 20px 20px;
 }
 
-.hero-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
 .hero-section h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #ffd700;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .hero-section h3 span {
@@ -80,20 +80,15 @@ body {
   padding: 30px;
   background: #f9f9f9;
   border-radius: 10px;
-  transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .work-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
- .card:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  }
 
 .work-card i {
   font-size: 2rem;
@@ -101,37 +96,27 @@ body {
   margin-bottom: 15px;
 }
 
-/* Skills */
+/* Skills Section */
 .skills {
   background: #1a1a2e;
   color: white;
+  padding: 60px 0;
 }
 
 .skill-card {
   background: #232946;
   border-radius: 10px;
+  padding: 20px;
   transition: all 0.3s ease;
 }
 
-<style>
-  .hover-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.skill-icon {
+  transition: transform 0.5s ease;
+}
 
-  .hover-effect:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-  }
-
-  .skill-icon {
-    transition: transform 0.5s ease;
-  }
-
-  .hover-effect:hover .skill-icon {
-    transform: rotate(10deg) scale(1.1);
-  }
-
-
+.skill-card:hover .skill-icon {
+  transform: rotate(10deg) scale(1.1);
+}
 
 /* Projects */
 #projects {
@@ -188,31 +173,25 @@ body {
 /* Contact Section */
 #contact {
   background: #ffffff;
+  padding: 60px 0;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+  border-color: #2575fc;
 }
 
 .contact-btn {
   background: #2575fc;
   border: none;
-}
-
-.contact-btn:hover {
-  background: #1a5cd6;
-}
-
-
-input:focus, textarea:focus {
-  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
-  border-color: #2575fc;
+  transition: 0.3s ease;
 }
 
 .contact-btn:hover {
   background-color: #1a5cd6 !important;
   transform: scale(1.01);
-  transition: 0.3s ease;
 }
-
-
-
 
 /* Footer */
 footer {
@@ -220,11 +199,6 @@ footer {
   color: #ccc;
   padding: 30px 0;
   text-align: center;
-}
-
-.footer-container {
-  max-width: 960px;
-  margin: auto;
 }
 
 .footer-links a {
@@ -241,6 +215,7 @@ footer .social-icons a {
   color: #ccc;
   margin: 0 10px;
   font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 footer .social-icons a:hover {
