@@ -7,6 +7,15 @@
     <meta property="og:image" content="URL_TO_YOUR_IMAGE">
     <meta property="og:url" content="YOUR_WEBSITE_URL">
     <meta name="twitter:card" content="summary_large_image">
+    
+<!-- SEO Enhancement -->
+<meta name="description" content="Portfolio of Sumanth B, a Full Stack Web Developer skilled in Java, Spring Boot, JavaScript, and modern frontend technologies.">
+<meta name="keywords" content="Sumanth B, Web Developer, Java, Spring Boot, JavaScript, HTML, CSS, Bootstrap, Full Stack Developer">
+<meta name="author" content="Sumanth B">
+
+<!-- Open Graph (for social sharing) -->
+<meta property="og:image" content="https://sumanthb46.github.io/Portfolio/images/profile.jpg">
+<meta property="og:url" content="https://sumanthb46.github.io/Portfolio/">
 
     <title>Portfolio | Sumanth B</title>
 
@@ -34,9 +43,10 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="custom-navbar">
-        <div class="container">
-            <a href="#" class="brand">Sumanth B</a>
+ <nav class="custom-navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container">
+    <a href="#home" class="brand" aria-label="Homepage">Sumanth B</a>
+    
 
             <!-- Hamburger / Close button -->
             <div class="menu-toggle" id="menuToggle">
@@ -58,8 +68,9 @@
 
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center text-white"
-        style="min-height: 100vh; background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);">
+   <section id="home" class="hero-section d-flex align-items-center text-white text-center text-md-start" 
+  style="min-height: 100vh; background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364); overflow: hidden;">
+
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
 
@@ -80,7 +91,7 @@
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#about" class="btn btn-warning px-4 py-2">Know Me</a>
                         <a href="#projects" class="btn btn-outline-light px-4 py-2">View Projects</a>
-                        <a href="files/Resume.pdf" class="btn btn-outline-info px-4 py-2" download>
+                        <a href="files/SUMANTHResume.pdf" class="btn btn-outline-info px-4 py-2" download>
                             <i class="fas fa-download me-2"></i>Download Resume
                         </a>
                     </div>
@@ -98,89 +109,83 @@
         </div>
     </section>
 
-    <section id="about" class="about py-5 position-relative"
-        style="background: linear-gradient(135deg, #e0eafc, #cfdef3); overflow: hidden;">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-3 display-5">About Me</h2>
-            <p class="text-center text-muted fs-5 mb-5 w-75 mx-auto">
-                A passionate developer skilled in creating full-stack web applications with elegant UI, solid
-                architecture, and optimized performance.
-            </p>
+   <section id="about" class="about py-5 position-relative">
+  <div class="container">
+    <!-- Section Heading -->
+    <h2 class="text-center fw-bold mb-3 display-5" data-aos="fade-down">About Me</h2>
+    <p class="text-center text-muted fs-5 mb-5 w-75 mx-auto" data-aos="fade-up" data-aos-delay="100">
+      A passionate developer skilled in creating full-stack web applications with elegant UI, solid
+      architecture, and optimized performance.
+    </p>
 
-            <h3 class="text-center mb-5" data-aos="fade-up">What I Do</h3>
+    <!-- Subheading -->
+    <h3 class="text-center mb-5" data-aos="fade-up" data-aos-delay="200">What I Do</h3>
 
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white hover-zoom">
-                        <div class="icon-wrapper mx-auto mb-3" style="color:#007bff;">
-                            <i class="bi bi-code-slash display-5"></i>
-                        </div>
-                        <h5 class="fw-bold">Frontend Development</h5>
-                        <p class="text-muted">Building interactive, pixel-perfect web interfaces with modern tools.</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white hover-zoom">
-                        <div class="icon-wrapper mx-auto mb-3" style="color:#6f42c1;">
-                            <i class="bi bi-terminal display-5"></i>
-                        </div>
-                        <h5 class="fw-bold">Backend Development</h5>
-                        <p class="text-muted">Developing secure RESTful APIs and server-side logic using Spring Boot.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white hover-zoom">
-                        <div class="icon-wrapper mx-auto mb-3" style="color:#28a745;">
-                            <i class="bi bi-globe2 display-5"></i>
-                        </div>
-                        <h5 class="fw-bold">Web Applications</h5>
-                        <p class="text-muted">Building scalable and performant full-stack applications.</p>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white hover-zoom">
-                        <div class="icon-wrapper mx-auto mb-3" style="color:#ffc107;">
-                            <i class="bi bi-cart-check display-5"></i>
-                        </div>
-                        <h5 class="fw-bold">E-commerce</h5>
-                        <p class="text-muted">Creating secure online stores with seamless shopping experiences.</p>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white hover-zoom">
-                        <div class="icon-wrapper mx-auto mb-3" style="color:#17a2b8;">
-                            <i class="bi bi-database-fill display-5"></i>
-                        </div>
-                        <h5 class="fw-bold">Database Design</h5>
-                        <p class="text-muted">Efficient schema design and querying using MySQL and relational concepts.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white hover-zoom">
-                        <div class="icon-wrapper mx-auto mb-3" style="color:#fd7e14;">
-                            <i class="bi bi-plug display-5"></i>
-                        </div>
-                        <h5 class="fw-bold">API Integration</h5>
-                        <p class="text-muted">Connecting applications with third-party services like Razorpay, Email
-                            APIs, etc.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Cards Grid -->
+    <div class="row g-4">
+      <!-- Card Template -->
+      <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card about-card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white">
+          <div class="icon-wrapper mx-auto mb-3">
+            <i class="bi bi-code-slash display-5"></i>
+          </div>
+          <h5 class="fw-bold">Frontend Development</h5>
+          <p class="text-muted">Building interactive, pixel-perfect web interfaces with modern tools.</p>
         </div>
-    </section>
+      </div>
+
+      <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card about-card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white">
+          <div class="icon-wrapper mx-auto mb-3">
+            <i class="bi bi-terminal display-5"></i>
+          </div>
+          <h5 class="fw-bold">Backend Development</h5>
+          <p class="text-muted">Developing secure RESTful APIs and server-side logic using Spring Boot.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card about-card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white">
+          <div class="icon-wrapper mx-auto mb-3">
+            <i class="bi bi-globe2 display-5"></i>
+          </div>
+          <h5 class="fw-bold">Web Applications</h5>
+          <p class="text-muted">Building scalable and performant full-stack applications.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+        <div class="card about-card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white">
+          <div class="icon-wrapper mx-auto mb-3">
+            <i class="bi bi-cart-check display-5"></i>
+          </div>
+          <h5 class="fw-bold">E-commerce</h5>
+          <p class="text-muted">Creating secure online stores with seamless shopping experiences.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="700">
+        <div class="card about-card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white">
+          <div class="icon-wrapper mx-auto mb-3">
+            <i class="bi bi-database-fill display-5"></i>
+          </div>
+          <h5 class="fw-bold">Database Design</h5>
+          <p class="text-muted">Efficient schema design and querying using MySQL and relational concepts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="800">
+        <div class="card about-card h-100 text-center border-0 shadow-sm p-4 rounded-4 bg-white">
+          <div class="icon-wrapper mx-auto mb-3">
+            <i class="bi bi-plug display-5"></i>
+          </div>
+          <h5 class="fw-bold">API Integration</h5>
+          <p class="text-muted">Connecting applications with third-party services like Razorpay, Email APIs, etc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="skills" class="skills py-5" style="background: linear-gradient(135deg, #1d2b64, #f8cdda);">
         <div class="container text-center text-white">
@@ -241,7 +246,8 @@
       <!-- Project 1 -->
       <div class="project-card" data-aos="fade-up" data-aos-delay="100">
         <div class="project-img">
-          <img src="./images/p5.png" alt="Mubarak Ceramics E-commerce">
+         <img src="./images/p5.png" alt="Mubarak Ceramics E-commerce Website Preview" loading="lazy">
+
         </div>
         <div class="project-info">
           <h3>Mubarak Ceramics & Granites</h3>
@@ -342,7 +348,9 @@
 
     <footer>
         <div class="footer-container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+           <p>&copy; 2025 Sumanth B. All rights reserved.</p>
+<a href="#home" class="back-to-top"><i class="bi bi-arrow-up-circle"></i></a>
+
             <div class="footer-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>

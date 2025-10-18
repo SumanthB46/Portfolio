@@ -232,6 +232,42 @@ body {
   line-height: 1.6;
 }
 
+
+/* About Cards */
+.about-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.about-card .icon-wrapper {
+  font-size: 3rem;
+  color: #007bff;
+  transition: transform 0.5s ease, color 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.about-card:hover .icon-wrapper {
+  transform: rotate(15deg) scale(1.2);
+  color: #6a11cb; /* Gradient color on hover can be applied via pseudo element if needed */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .about-card h5 {
+    font-size: 1.05rem;
+  }
+  .about-card p {
+    font-size: 0.88rem;
+  }
+}
+
+
 /* Skills Section */
 .skills {
   background: #1a1a2e;
