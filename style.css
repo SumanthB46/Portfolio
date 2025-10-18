@@ -254,79 +254,124 @@ body {
   transform: rotate(10deg) scale(1.1);
 }
 
-/* Projects */
+
+/* ===========================
+   PROJECTS SECTION STYLING
+   =========================== */
+
 #projects {
-  padding: 60px 0;
-  background: #f4f6f8;
+  padding: 70px 0;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
-  color: #333;
-  font-weight: bold;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1b1b1b;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 
+.section-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Project Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center;
 }
 
+/* Card */
 .project-card {
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
+  width: 100%;
+  max-width: 320px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-.project-card img {
+/* Image Container */
+.project-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #eee;
+  height: 180px;
+  overflow: hidden;
 }
 
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Info */
 .project-info {
-  padding: 20px;
+  padding: 18px 20px 25px;
   text-align: left;
 }
 
 .project-info h3 {
   color: #2575fc;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-info h3 {
+  color: #6a11cb;
 }
 
 .project-info p {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #555;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
+/* Button */
 .project-link {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #2575fc;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
   color: #fff;
+  font-weight: 600;
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 117, 252, 0.25);
+  transition: all 0.3s ease;
 }
 
 .project-link:hover {
-  background-color: #1a5cd8;
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.35);
 }
+
+
 
 /* Contact Section */
 #contact {
